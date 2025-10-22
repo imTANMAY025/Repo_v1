@@ -116,11 +116,11 @@ public class LogicalCodeTest_EY_Prep {
 //        .map(f -> f[0])   // take first number of each pair
 //        .forEach(n1 -> System.out.print(n1 + " "));
         
-//        // Find the first repeated character in a string (SWISS -> S) using stream api
-//        String s="WSWISWWS";
-//        Map<Character, Long> resultMap= s.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new, Collectors.counting()));
-//         Character s1= resultMap.entrySet().stream().filter(entry-> entry.getValue()>1).map(Map.Entry::getKey).findFirst().get();
-//        System.out.println(s1);
+        // Find the first repeated character in a string (SWISS -> S) using stream api
+        String s="WSWISWWS";
+        Map<Character, Long> resultMap= s.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new, Collectors.counting()));
+         Character s1= resultMap.entrySet().stream().filter(entry-> entry.getValue()>1).map(Map.Entry::getKey).findFirst().get();
+        System.out.println(s1);
         
         
  
