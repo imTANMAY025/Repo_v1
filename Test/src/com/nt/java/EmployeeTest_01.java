@@ -12,11 +12,11 @@ public class EmployeeTest_01 {
 		// TODO Auto-generated method stub
 
 		List<Employee> employees = new ArrayList<>();
-		employees.add(new Employee("Ravi Kumar", "30", "IT", "75000", "9876543210"));
-        employees.add(new Employee("Anita Sharma", "28", "HR", "65000", "8765432109"));
-        employees.add(new Employee("Vikram Singh", "35", "Finance", "82000", "7654321098"));
-        employees.add(new Employee("Sneha Verma", "26", "Marketing", "58000", "6543210987"));
-        employees.add(new Employee("Arjun Das", "32", "IT", "77000", "9123456780"));
+		employees.add(new Employee("Ravi Kumar", "30", "IT", 75000.0, "9876543210"));
+        employees.add(new Employee("Anita Sharma", "28", "HR", 65000.0, "8765432109"));
+        employees.add(new Employee("Vikram Singh", "35", "Finance", 82000.0, "7654321098"));
+        employees.add(new Employee("Sneha Verma", "26", "Marketing", 58000.0, "6543210987"));
+        employees.add(new Employee("Arjun Das", "32", "IT", 77000.0, "9123456780"));
 
         
         //System.out.println(employees);

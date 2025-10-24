@@ -5,12 +5,12 @@ public class Employee {
 	private String name;
 	private String age;
 	private String dept;
-	private String salary;
+	private Double salary;
 	private String cno;
 	
 	
 	
-	public Employee(String name, String age, String dept, String salary, String cno) {
+	public Employee(String name, String age, String dept, Double salary, String cno) {
 		super();
 		this.name = name;
 		this.age = age;
@@ -37,10 +37,10 @@ public class Employee {
 	public void setDept(String dept) {
 		this.dept = dept;
 	}
-	public String getSalary() {
+	public Double getSalary() {
 		return salary;
 	}
-	public void setSalary(String salary) {
+	public void setSalary(Double salary) {
 		this.salary = salary;
 	}
 	public String getCno() {
