@@ -16,13 +16,13 @@ public class EmployeeTest {
 		
 		
 		List<Employee> empList = Arrays.asList(
-	            new Employee("Alice", "30", "IT", 70000.0, "9876543210"),
-	            new Employee("Bob", "40", "HR", 50000.0, "9876543211"),
-	            new Employee("Charlie", "35", "IT", 80000.0, "9876543212"),
-	            new Employee("David", "45", "Finance", 90000.0, "9876543213"),
-	            new Employee("Eve", "28", "HR", 60000.0, "9876543214"),
-	            new Employee("Frank", "50", "Finance", 75000.0, "9876543215"),
-	            new Employee("Grace", "32", "IT", 85000.0, "9876543216")
+	            new Employee("Alice", 30, "IT", 70000.0, "9876543210"),
+	            new Employee("Bob", 40, "HR", 50000.0, "9876543211"),
+	            new Employee("Charlie", 35, "IT", 80000.0, "9876543212"),
+	            new Employee("David", 45, "Finance", 90000.0, "9876543213"),
+	            new Employee("Eve", 28, "HR", 60000.0, "9876543214"),
+	            new Employee("Frank", 50, "Finance", 75000.0, "9876543215"),
+	            new Employee("Grace", 32, "IT", 85000.0, "9876543216")
 	        );
 		
 		
@@ -72,13 +72,27 @@ public class EmployeeTest {
 //				.collect(Collectors.groupingBy(Employee::getDept,
 //						Collectors.maxBy(Comparator.comparingDouble(Employee::getSalary).reversed() )))
 //				);
-//		
 //		result.ifPresentOrElse(
 //				map-> System.out.println(map), 		
 //				()-> System.out.println("No result"));
 		
+//		//Find the list of employee and sort them by their salary
+//		Optional<List<Employee>> result =  Optional.ofNullable(empList.stream()
+//				.sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).collect(Collectors.toList()));
+//		
+//		result.ifPresentOrElse(list-> System.out.println(result.get()), ()-> System.out.println("No records Found"));
 		
 		
+//		//Avg age in each department
+//		Optional<Map<String,Double>> result =  Optional.ofNullable(empList.stream().collect(Collectors.groupingBy(Employee::getDept,Collectors.averagingDouble(Employee::getAge))));
+//	
+//		result.ifPresentOrElse(
+//				map-> System.out.println(map), 
+//				()->System.out.println("No records."));
+	
+	
+		
+	
 	}
 	
 	

@@ -3,14 +3,14 @@ package com.nt.java;
 public class Employee {
 
 	private String name;
-	private String age;
+	private int age;
 	private String dept;
 	private Double salary;
 	private String cno;
 	
 	
 	
-	public Employee(String name, String age, String dept, Double salary, String cno) {
+	public Employee(String name, int age, String dept, Double salary, String cno) {
 		super();
 		this.name = name;
 		this.age = age;
@@ -25,10 +25,10 @@ public class Employee {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getAge() {
+	public int getAge() {
 		return age;
 	}
-	public void setAge(String age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 	public String getDept() {
